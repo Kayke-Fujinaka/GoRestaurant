@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   background: #c72828;
@@ -12,13 +12,18 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    img {
+      width: 300px;
+      height: 60px;
+    }
+
     nav {
       div {
         button {
           font-weight: 600;
           border-radius: 8px;
           border: 0;
-          background: #39b100;
+          background: #1e8200;
           color: #fff;
 
           display: flex;
@@ -32,7 +37,7 @@ export const Container = styled.div`
           .icon {
             display: flex;
             padding: 16px 16px;
-            background: #41c900;
+            background: #1e9000;
             border-radius: 0 8px 8px 0;
             margin: 0 auto;
           }

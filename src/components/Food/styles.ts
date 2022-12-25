@@ -22,6 +22,8 @@ export const Container = styled.div<Props>`
       `};
 
     img {
+      width: 352px;
+      height: 198px;
       pointer-events: none;
       user-select: none;
     }
@@ -44,7 +46,7 @@ export const Container = styled.div<Props>`
       font-style: normal;
       font-size: 24px;
       line-height: 34px;
-      color: #39b100;
+      color: #1e8200;
 
       b {
         font-weight: 600;
@@ -130,7 +132,7 @@ export const Container = styled.div<Props>`
         }
 
         input:checked + .slider {
-          background-color: #39b100;
+          background-color: #1e8200;
         }
 
         input:focus + .slider {
