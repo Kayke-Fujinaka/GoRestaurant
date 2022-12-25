@@ -13,11 +13,20 @@ interface EditFood {
   description: string;
 }
 
+interface Food {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  available: boolean;
+}
+
 interface ModalEditFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  handleUpdateFood: (data: EditFood) => void;
-  editingFood: () => void;
+  handleUpdateFood: (data: Food) => void;
+  editingFood: Food;
 }
 
 export default function ModalEditFood({
@@ -28,7 +37,7 @@ export default function ModalEditFood({
 }: ModalEditFoodProps) {
   const formRef = createRef<FormHandles>();
 
-  const handleSubmit = async (data: EditFood) => {
+  const handleSubmit = async (data: Food) => {
     handleUpdateFood(data);
     setIsOpen();
   };
