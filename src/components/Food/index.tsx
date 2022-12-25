@@ -16,7 +16,7 @@ export default function Food({ food, handleDelete, handleEditFood }: Props) {
 
   async function toggleAvailable(): Promise<void> {
     try {
-      await api.put(`/foods/${food.id}`, {
+      await api.put<IFood>(`/foods/${food.id}`, {
         ...food,
         available: !isAvailable,
       });
