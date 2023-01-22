@@ -41,8 +41,6 @@
 
 ## 📜 About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://avatars.githubusercontent.com/u/98772000?v=4)
-
 GoRestaurant is a fictitious application in React.js that is an admin panel for restaurants to control which meals are available and which are unavailable.
 
 ### Built With
